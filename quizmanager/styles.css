@@ -1,0 +1,109 @@
+/*Encapsulate styles in variables*/
+:root {
+    /*Typography*/
+    --body-font: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --heading-font: inherit;
+    --body-color: #212529;
+    --heading-color: inherit;
+    /*background*/
+    --body-bg: #ffffff;
+    /*Buttons*/
+    --btn-primary: #007bff;
+    --hover-btn-primary: #0069d9;
+    --btn-primary-border: #007bff;
+    --hover-btn-primary-border: #0062cc;
+    --btn-primary-color: #ffffff;
+    --btn-secondary: #6c757d;
+    --hover-btn-secondary: #5a6268;
+    --btn-secondary-border: #6c757d;
+    --hover-btn-secondary-border: #545b62;
+    --btn-secondary-color: #ffffff;
+    /*logo styling*/
+    --logo-height: 50px;
+    --logo-width: auto;
+    /*Navbar*/
+    --navbar: #343a40;
+    /*Login page*/
+    --login-bg: #343a40;
+    --login-heading: #ffffff;
+}
+
+.logo {
+    height: var(--logo-height);
+    width: var(--logo-width);
+}
+
+.navbar {
+    background-color: var(--navbar);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--body-color);
+    background-color: var(--body-bg);
+}
+body.login {
+    background-color: var(--login-bg);
+}
+.login-heading {
+    color: var(--login-heading);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color)
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/*Main Quiz and Questions display pages*/
+.wrapper.main {
+    max-width: 1140px;
+}
+
+/*Error and access denied pages*/
+.wrapper.error {
+    max-width: 750px;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary);
+    border-color: var(--btn-primary-border);
+    color: var(--btn-primary-color);
+}
+.btn-primary:hover {
+    background-color: var(--hover-btn-primary);
+    border-color: var(--hover-btn-primary-border);
+    color: var(--btn-primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary);
+    border-color: var(--btn-secondary-border);
+    color: var(--btn-secondary-color);
+}
+.btn-secondary:hover {
+    background-color: var(--hover-btn-secondary);
+    border-color: var(--hover-btn-secondary-border);
+    color: var(--btn-secondary-color);
+}
+
+a {
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table tr td:last-child a {
+    margin-right: 15px;
+}
+
+/*display lettering A.B... next to answers*/
+.list-group-item {
+    display: list-item;
+}
